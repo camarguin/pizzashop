@@ -1,0 +1,43 @@
+.Pizzaoftheday {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    min-height: 550px;
+    background: linear-gradient(89.24deg, rgba(0, 0, 0, 0.72) 0.58%, rgba(0, 0, 0, 0.05) 124.3%), url('../../media/BackgroundPizzaOfDay.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+.Pizzaoftheday h1 {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: 50px;
+    margin: 20px 0px;
+}
+
+.Pizzaoftheday h2 {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5em;
+    line-height: 36px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.Pizzaoftheday p {
+    margin-bottom: 50px;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 27px;
+    text-align: center;
+}

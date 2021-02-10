@@ -1,0 +1,45 @@
+.Poppizzas {
+    display: flex;
+    background: #101820;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #060a0d, #101820);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #060a0d, #101820);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    min-height: 900px;
+}
+
+.PoppizzasContainer {
+    /* margin: 0px 100px 0px 100px; */
+    padding: 100px;
+}
+
+.Poppizzas h1 {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: 50px;
+}
+
+.Poppizzas hr {
+    border: 1px solid #F3752B;
+    width: 320px;
+}
+
+.cardPizzasContainer {
+    margin: 100px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.PoppizzasBtnContainer {
+    display: flex;
+    justify-content: center;
+}
