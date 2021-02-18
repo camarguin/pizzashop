@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link, HashRouter as Router } from 'react-router-dom';
 
 import './Button.css'
 
 const Button = (props) => {
     return (
-        <button className="Btn" onClick={props.onClick}>
+        <Link className="Btn" to="/order">
             {props.children}
-        </button>
+        </Link>
     );
 };
 

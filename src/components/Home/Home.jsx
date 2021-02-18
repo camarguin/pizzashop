@@ -17,7 +17,9 @@ const Home = () => {
                 <h5>Fast Made Pizza</h5>
                 <hr />
                 <h1>Most Delicious Pizza <br /> in vancouver</h1>
-                <Button>ORDER NOW</Button>
+                <div className="BtnDiv">
+                    <Button>ORDER NOW</Button>
+                </div>
                 <h6><AiOutlinePhone /> +1 (778) 000-0000</h6>
                 <ul>
                     <li><a href=""><AiFillFacebook /></a></li>

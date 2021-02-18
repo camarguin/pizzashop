@@ -1,0 +1,21 @@
+.Toppings {
+    padding: 20px 0px;
+}
+
+.ToppingsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.Topping {
+    padding: 5px 0px;
+}
+
+.ToppingsGrid input {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.ToppingsGrid label {
+    cursor: pointer;
+}

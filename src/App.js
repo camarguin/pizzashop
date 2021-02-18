@@ -1,18 +1,23 @@
 import React from 'react';
-import Footer from './components/Footer/Footer';
-import Home from './components/Home/Home';
-import Menu from './components/Menu/Menu';
-import Pizzaoftheday from './components/PizzaOfTheDay/Pizzaoftheday';
-import Poppizzas from './components/PopPizzas/Poppizzas';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+
+import OrderPage from './pages/OrderPage';
+import HomePage from './pages/HomePage';
 
 const App = () => {
   return (
-    <div>
-      <Home />
-      <Poppizzas />
-      <Pizzaoftheday />
-      <Footer />
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" exact>
+          <>
+            <HomePage />
+          </>
+        </Route>
+        <Route path="/order">
+          <OrderPage />
+        </Route>
+      </Switch>
+    </Router>
   );
 };
 

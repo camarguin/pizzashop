@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { Children, useEffect, useState } from 'react';
 
 import './Menu.css';
 import PizzariaIcon from '../../media/PizzariaIcon.png';
 import PizzaMenuIcon from '../../media/PizzaMenuIcon.svg';
 
-const Menu = () => {
+const Menu = ({ style }) => {
     const [scrollClass, setScrollClass] = useState("Menu");
 
     useEffect(() => {
@@ -19,7 +19,7 @@ const Menu = () => {
     }
 
     return (
-        <nav className={scrollClass}>
+        <nav className={scrollClass} style={style}>
             <a href=""><img src={PizzariaIcon} alt="" /></a>
             <div className="menu-navbar">
                 <button>Menu <img src={PizzaMenuIcon} alt="" /></button>

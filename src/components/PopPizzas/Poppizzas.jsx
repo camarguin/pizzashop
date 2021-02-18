@@ -29,9 +29,7 @@ const Poppizzas = () => {
                         ingredients="Tomato sauce, black olives, fresh basil, caramelized onions, extra virgin olive oil" />
                 </div>
                 <div className="PoppizzasBtnContainer">
-                    <Button onClick={() => {
-                        console.log("Hello")
-                    }}>Full Menu</Button>
+                    <Button link="/order">Full Menu</Button>
                 </div>
             </div>
         </div>

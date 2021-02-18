@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background: transparent;
+    /* background: blue; */
     height: 80px;
     display: flex;
     justify-content: center;
@@ -13,7 +13,7 @@
 }
 
 .Scrolled {
-    background-color: rgb(16,24,32, 0.99);
+    background-color: rgb(16, 24, 32, 0.99);
     z-index: 1;
 }
 
@@ -45,4 +45,70 @@
 
 .Menu button img {
     width: 25px;
+}
+
+.MenuOrdering {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #101820;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    transition: 0.6s;
+    z-index: 1;
+}
+
+.MenuOrdering a img {
+    width: 100px;
+}
+
+.MenuOrdering button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    outline: none;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.MenuOrdering button img {
+    width: 25px;
+}
+
+.MenuOrdering .menu-navbar {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 5%;
+}
+
+.buttonCheckout {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    outline: none;
+    padding: 15px;
+    cursor: pointer;
+}
+.buttonCheckout label {
+    font-size: 0.7em;
+    position: absolute;
+    bottom: 0;
+    background-color: #F3752B;
+    border-radius: 100%;
+    padding: 3px;
+}
+
+#checkout {
+    padding: 0px;
+    position: relative;
+    top: 15%;
 }

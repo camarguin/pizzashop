@@ -1,0 +1,28 @@
+.Order {
+    background-color: chocolate;
+    height: 100vh;
+    width: 500px;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    transition: all 2s;
+}
+
+.orderContainer {
+    padding: 10px 0px;
+    border-bottom: 1px solid grey;
+    background-color: blueviolet;
+}
+
+.orderItem {
+    padding: 10px 0px;
+    display: grid;
+    grid-template-columns: 10px 120px 20px 60px;
+    justify-content: space-between;
+}
+
+.orderItem div {}
+
+#removeBtn {
+    cursor: pointer;
+}
