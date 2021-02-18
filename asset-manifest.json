@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/pizzashop/static/css/main.7174aa04.chunk.css",
+    "main.js": "/pizzashop/static/js/main.06c31fa5.chunk.js",
+    "main.js.map": "/pizzashop/static/js/main.06c31fa5.chunk.js.map",
+    "runtime-main.js": "/pizzashop/static/js/runtime-main.6ba2538b.js",
+    "runtime-main.js.map": "/pizzashop/static/js/runtime-main.6ba2538b.js.map",
+    "static/js/2.8bb99566.chunk.js": "/pizzashop/static/js/2.8bb99566.chunk.js",
+    "static/js/2.8bb99566.chunk.js.map": "/pizzashop/static/js/2.8bb99566.chunk.js.map",
+    "static/js/3.2b68dc98.chunk.js": "/pizzashop/static/js/3.2b68dc98.chunk.js",
+    "static/js/3.2b68dc98.chunk.js.map": "/pizzashop/static/js/3.2b68dc98.chunk.js.map",
+    "index.html": "/pizzashop/index.html",
+    "static/css/main.7174aa04.chunk.css.map": "/pizzashop/static/css/main.7174aa04.chunk.css.map",
+    "static/js/2.8bb99566.chunk.js.LICENSE.txt": "/pizzashop/static/js/2.8bb99566.chunk.js.LICENSE.txt",
+    "static/media/Home.css": "/pizzashop/static/media/BackgroundHome.de2ba38c.jpg",
+    "static/media/Pizzaoftheday.css": "/pizzashop/static/media/BackgroundPizzaOfDay.040d77c2.jpg",
+    "static/media/PizzaMenuIcon.d9a17894.svg": "/pizzashop/static/media/PizzaMenuIcon.d9a17894.svg",
+    "static/media/PizzariaIcon.abfa8fae.png": "/pizzashop/static/media/PizzariaIcon.abfa8fae.png",
+    "static/media/PopPizza1.4a7f3899.jpg": "/pizzashop/static/media/PopPizza1.4a7f3899.jpg",
+    "static/media/PopPizza2.6a362efc.jpg": "/pizzashop/static/media/PopPizza2.6a362efc.jpg",
+    "static/media/PopPizza3.dc070310.jpg": "/pizzashop/static/media/PopPizza3.dc070310.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6ba2538b.js",
+    "static/js/2.8bb99566.chunk.js",
+    "static/css/main.7174aa04.chunk.css",
+    "static/js/main.06c31fa5.chunk.js"
+  ]
+}
