@@ -1,0 +1,8 @@
+.Sizes {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px;
+}
+.Sizes select {
+    max-width: 200px;
+}

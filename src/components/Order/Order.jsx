@@ -37,25 +37,25 @@ const Order = ({ orders, setOrders }, props) => {
                                     <div id="removeBtn" onClick={() => { deleteItem(i) }}>{ }<BsTrash /></div>
                                 </div>
                                 <div className="detailItem">
-                                    <p>{order.toppings.filter(t => t.checked).map(topping => topping.name).join(", ")}</p>
-                                    <div>{order.size && <p>{order.size}</p>}</div>
+                                    <p>Toppings: {order.toppings.filter(t => t.checked).map(topping => topping.name).join(", ")}</p>
+                                    <div>{order.size && <p>Size: {order.size}</p>}</div>
                                 </div>
                             </div>
                         ))}
                     </div>}
-                <div className="OrderContainer">
-                    <div className="OrderItem">
-                        <div>Subtotal: {formatPrice(subtotal)}</div>
+                <div className="orderFooter">
+                    <div className="subtotalLabel">
+                        <h4>Subtotal: {formatPrice(subtotal)}</h4>
                     </div>
-                    <div className="OrderItem">
-                        <div>Tax: {formatPrice(tax)}</div>
+                    <div className="taxLabel">
+                        <h4>Tax: {formatPrice(tax)}</h4>
                     </div>
-                    <div className="OrderItem">
-                        <div>Total: {formatPrice(total)}</div>
+                    <div className="totalLabel">
+                        <h4>Total: {formatPrice(total)}</h4>
                     </div>
-                </div>
-                <div className="OrderFooter">
-                    <button>Checkout</button>
+                    <div className="checkoutButton">
+                        <button>Checkout</button>
+                    </div>
                 </div>
             </div>
         </>

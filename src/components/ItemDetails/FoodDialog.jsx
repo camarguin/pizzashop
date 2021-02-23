@@ -11,18 +11,18 @@ import Sizes from './Sizes';
 const pricePerTopping = 0.5;
 
 export const getPrice = (order) => {
-    if (order.size === "Small") {
+    if (order.size === 'Small - 8"') {
         return 6 + order.quantity * (order.price + order.toppings.filter(t => t.checked).length * pricePerTopping);
-    } if (order.size === "Medium") {
+    } if (order.size === 'Medium - 10"') {
         return 8 + order.quantity * (order.price + order.toppings.filter(t => t.checked).length * pricePerTopping);
-    } if (order.size === "Large") {
+    } if (order.size === 'Large - 12"') {
         return 10 + order.quantity * (order.price + order.toppings.filter(t => t.checked).length * pricePerTopping);
     } else {
         return order.quantity * (order.price + order.toppings.filter(t => t.checked).length * pricePerTopping);
     }
 }
 export const hasToppings = (food) => {
-    return food.section === 'Pizza';
+    return food.section === 'Pizzas';
 }
 
 const FoodDialogContainer = ({ openFood, setOpenFood, setOrders, orders }, props) => {
@@ -49,16 +49,19 @@ const FoodDialogContainer = ({ openFood, setOpenFood, setOrders, orders }, props
             <>
                 <div className="DialogShadow" onClick={closeDialog}></div>
                 <div className="Dialog">
-                    Test Dialog
+                    <img src="" alt="" />
                     <h1>{openFood.name}</h1>
+                    <p>{openFood.ingredients}</p>
                     {hasToppings(openFood) && <>
-                        <h3>Would you like some toppings?</h3>
+                        <h3>Toppings:</h3>
+                        <h5><small><i>+CA$0.50 each</i></small></h5>
                         <Toppings {...toppings} />
                     </>}
-                    {openFood.sizes && <Sizes openFood={openFood} sizeInput={sizeInput} />}
                     <div className="choicesBtnContainer">
-                        <div>
-                            <label htmlFor="quantity">Qty:</label>
+                        {openFood.sizes && <Sizes openFood={openFood} sizeInput={sizeInput} />}
+                        <div className="Quantity">
+                            <h3>Quantity:</h3>
+                            {/* <label htmlFor="quantity">Qty:</label> */}
                             <input id="quantity" max="20" value="1" type="number" {...quantity} />
                         </div>
                     </div>

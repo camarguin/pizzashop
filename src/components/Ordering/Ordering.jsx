@@ -18,6 +18,7 @@ const Ordering = ({ setOpenFood, openFood }) => {
                             {foods.map((food, i) => (
                                 <CardItem
                                     key={i}
+                                    pizzaImg={food.img}
                                     pizzaName={food.name}
                                     pizzaIngredients={food.ingredients}
                                     onClick={() => { setOpenFood(food) }} />

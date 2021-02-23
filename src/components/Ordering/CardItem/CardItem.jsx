@@ -1,13 +1,13 @@
 import React from 'react';
 
-import popPizza from '../../../media/PopPizza1.jpg';
+import popPizza from '../../../media/Foods/pizza1.jpg';
 import './CardItem.css';
 
 const CardItem = (props) => {
     return (
         <div className="CardItem">
             <div className="imgContainer">
-                <img src={popPizza} alt="" />
+                <img src={props.pizzaImg} alt="" />
             </div>
             <div className="detailsContainer">
                 <h3>{props.pizzaName}</h3>
@@ -16,7 +16,7 @@ const CardItem = (props) => {
             </div>
 
 
-        </div>
+        </div >
     );
 };
 
