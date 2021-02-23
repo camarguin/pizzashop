@@ -13,7 +13,7 @@ const Ordering = ({ setOpenFood, openFood }) => {
             <div className="OrderPageContainer">
                 {Object.entries(foods).map(([sectionName, foods]) => (
                     <>
-                        <h1>{sectionName}</h1>
+                        <h1 key={foods.index}>{sectionName}</h1>
                         <div className="FoodsGrid">
                             {foods.map((food, i) => (
                                 <CardItem

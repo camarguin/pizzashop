@@ -7,7 +7,7 @@ const Toppings = ({ toppings, checkTopping }) => {
         <div className="Toppings">
             <div className="ToppingsGrid">
                 {toppings.map((topping, index) => (
-                    <div className="Topping">
+                    <div className="Topping" key={index}>
                         <label htmlFor={index}>
                             <input type="checkbox" name={topping.name} id={index} checked={topping.checked} onClick={() => {
                                 checkTopping(index);

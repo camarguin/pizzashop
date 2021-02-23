@@ -41,7 +41,6 @@ const FoodDialogContainer = ({ openFood, setOpenFood, setOrders, orders }, props
     }
     const addToOrder = () => {
         setOrders([...orders, order]);
-        console.log(order)
         closeDialog();
     }
     return (

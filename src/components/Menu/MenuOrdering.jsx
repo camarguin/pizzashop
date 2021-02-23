@@ -12,7 +12,7 @@ const MenuOrdering = (props) => {
             <div className="menu-navbar">
                 <div className="buttonCheckout">
                     <button name="checkout" id="checkout" onClick={props.onClickCheckout}>Checkout <HiOutlineShoppingBag size="25px" /></button>
-                    <label htmlFor="checkout">12</label>
+                    {/* <label htmlFor="checkout">2</label> */}
                 </div>
                 <button onClick={props.onClickMenu}>Menu <img src={PizzaMenuIcon} alt="" /></button>
             </div>

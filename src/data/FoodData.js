@@ -18,8 +18,9 @@ import Pizza17 from '../media/Foods/pizza17.jpg';
 import Pizza18 from '../media/Foods/pizza18.jpg';
 import Pizza19 from '../media/Foods/pizza19.jpg';
 import Pizza20 from '../media/Foods/pizza20.jpg';
-
-
+import Sprite from '../media/Foods/sprite.jpg';
+import Fanta from '../media/Foods/fanta.jpg';
+import Coke from '../media/Foods/coke.jpg';
 
 export function formatPrice(price) {
     return price.toLocaleString('en-US', {
@@ -30,56 +31,173 @@ export function formatPrice(price) {
 
 export const foodItems = [
     {
-        name: 'Cheese Pizza',
+        name: 'Veggie Pizza',
         img: Pizza1,
+        ingredients: "Mozzarella cheese, tomato sauce, cherry tomatoes, basil, oregano",
         section: 'Pizzas',
-        price: 1,
+        price: 7,
         sizes: ['Small - 8"', 'Medium - 10"', 'Large - 12"']
     },
     {
-        name: 'Bacon Pizza',
+        name: 'Pepperoni Pizza',
         img: Pizza2,
+        ingredients: "Mozzarella cheese, tomato sauce, pepperoni",
         section: 'Pizzas',
-        price: 2,
+        price: 7,
         sizes: ['Small - 8"', 'Medium - 10"', 'Large - 12"']
     },
     {
-        name: 'Tomato Pizza',
+        name: 'Mushlovers Pizza',
         img: Pizza3,
+        ingredients: "Mozzarella cheese, tomato sauce, pepperoni, mushrooms, onions, black olives",
         section: 'Pizzas',
-        price: 1.5,
+        price: 7,
         sizes: ['Small - 8"', 'Medium - 10"', 'Large - 12"']
     },
     {
-        name: 'Fruit Pizza',
+        name: 'Broqui Pizza',
         img: Pizza4,
+        ingredients: "Mozzarella cheese, tomato sauce, broccoli, onions, green peppers, cherry tomatoes, mushrooms",
         section: 'Pizzas',
-        price: 1.2,
+        price: 7,
         sizes: ['Small - 8"', 'Medium - 10"', 'Large - 12"']
     },
     {
-        name: 'Chocolate Pizza',
+        name: 'Cheedar Pizza',
         img: Pizza5,
+        ingredients: "Mozzarella cheese, tomato sauce, smoked bacon, cheddar cheese",
         section: 'Pizzas',
-        price: 1.9,
+        price: 7.5,
         sizes: ['Small - 8"', 'Medium - 10"', 'Large - 12"']
     },
     {
-        name: 'Cheese Pizza',
+        name: 'Hawasland Pizza',
         img: Pizza6,
+        ingredients: "Mozzarella cheese, tomato sauce, smoked bacon, pineapple",
         section: 'Pizzas',
-        price: 3,
+        price: 8,
         sizes: ['Small - 8"', 'Medium - 10"', 'Large - 12"']
     },
     {
-        price: 1,
-        name: 'Sprite',
-        section: 'Drinks',
-        // choices: ['Coke', 'Sprite', 'Guarana']
+        name: 'Broadway Pizza',
+        img: Pizza7,
+        ingredients: "Mozzarella cheese, tomato sauce, spinach, blue cheese",
+        section: 'Pizzas',
+        price: 9,
+        sizes: ['Small - 8"', 'Medium - 10"', 'Large - 12"']
     },
     {
-        price: 1,
+        name: 'Ricotta Pizza',
+        img: Pizza8,
+        ingredients: "Mozzarella cheese, Olive Oil sauce, ricotta cheese, cherry tomatoes, basil, oregano",
+        section: 'Pizzas',
+        price: 8,
+        sizes: ['Small - 8"', 'Medium - 10"', 'Large - 12"']
+    },
+    {
+        name: 'Brooklyn Pizza',
+        img: Pizza9,
+        ingredients: "Mozzarella cheese, tomato sauce, spanish chorizo, minced garlic, basil",
+        section: 'Pizzas',
+        price: 6.9,
+        sizes: ['Small - 8"', 'Medium - 10"', 'Large - 12"']
+    },
+    {
+        name: 'Oriental Pizza',
+        img: Pizza10,
+        ingredients: "Mozzarella cheese, tomato sauce, spanish chorizo, homemade spicy oriental pepper, cherry tomatoes, minced garlic",
+        section: 'Pizzas',
+        price: 7.9,
+        sizes: ['Small - 8"', 'Medium - 10"', 'Large - 12"']
+    },
+    {
+        name: 'Gastown Pizza',
+        img: Pizza11,
+        ingredients: "Mozzarella cheese, tomato sauce, handmade meatballs, olive oil sauce",
+        section: 'Pizzas',
+        price: 8.5,
+        sizes: ['Small - 8"', 'Medium - 10"', 'Large - 12"']
+    },
+    {
+        name: 'Delhi Pizza',
+        img: Pizza12,
+        ingredients: "Mozzarella cheese, tomato sauce, tandoori chicken",
+        section: 'Pizzas',
+        price: 7,
+        sizes: ['Small - 8"', 'Medium - 10"', 'Large - 12"']
+    },
+    {
+        name: 'Meatlovers Pizza',
+        img: Pizza13,
+        ingredients: "Mozzarella cheese, tomato sauce, pepperoni, Spanish chorizo, Italian sausage, Spanish sausage, handmade meatballs",
+        section: 'Pizzas',
+        price: 7,
+        sizes: ['Small - 8"', 'Medium - 10"', 'Large - 12"']
+    },
+    {
+        name: 'Parmesan Pizza',
+        img: Pizza14,
+        ingredients: "Mozzarella cheese, tomato sauce, blue cheese, ricotta cheese, cheddar cheese, parmesan cheese, oregano",
+        section: 'Pizzas',
+        price: 7.6,
+        sizes: ['Small - 8"', 'Medium - 10"', 'Large - 12"']
+    },
+    {
+        name: 'Zucchini Pizza',
+        img: Pizza15,
+        ingredients: "Mozzarella cheese, tomato sauce, zucchini, blue cheese, oregano",
+        section: 'Pizzas',
+        price: 7,
+        sizes: ['Small - 8"', 'Medium - 10"', 'Large - 12"']
+    },
+    {
+        name: 'Eggplant Pizza',
+        img: Pizza16,
+        ingredients: "Mozzarella cheese, tomato sauce, eggplant, ricotta cheese, oregano",
+        section: 'Pizzas',
+        price: 8,
+        sizes: ['Small - 8"', 'Medium - 10"', 'Large - 12"']
+    },
+    {
+        name: 'Miamore Pizza',
+        img: Pizza17,
+        ingredients: "Mozzarella cheese, tomato sauce, italian sausage, Spanish sausage",
+        section: 'Pizzas',
+        price: 13,
+        sizes: ['Small - 8"', 'Medium - 10"', 'Large - 12"']
+    },
+    {
+        name: 'Jalapeno Pizza',
+        img: Pizza18,
+        ingredients: "Mozzarella cheese, tomato sauce, mexican chicken, jalapenos, cheddar cheese",
+        section: 'Pizzas',
+        price: 7,
+        sizes: ['Small - 8"', 'Medium - 10"', 'Large - 12"']
+    },
+    {
+        name: 'Supermeat Pizza',
+        img: Pizza19,
+        ingredients: "Mozzarella cheese, tomato sauce, handmade meatballs, jalapenos, cheddar cheese",
+        section: 'Pizzas',
+        price: 7,
+        sizes: ['Small - 8"', 'Medium - 10"', 'Large - 12"']
+    },
+    {
+        price: 3,
+        name: 'Sprite',
+        img: Sprite,
+        section: 'Drinks',
+    },
+    {
+        price: 3,
         name: 'Coke',
+        img: Coke,
+        section: 'Drinks'
+    },
+    {
+        price: 3,
+        name: 'Fanta',
+        img: Fanta,
         section: 'Drinks'
     }
 ];
