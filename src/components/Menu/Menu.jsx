@@ -22,7 +22,7 @@ const Menu = ({ style }) => {
         <nav className={scrollClass} style={style}>
             <a href=""><img src={PizzariaIcon} alt="" /></a>
             <div className="menu-navbar">
-                <button>Menu <img src={PizzaMenuIcon} alt="" /></button>
+                {/* <button>Menu <img src={PizzaMenuIcon} alt="" /></button> */}
             </div>
         </nav>
     );

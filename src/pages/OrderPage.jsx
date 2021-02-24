@@ -5,6 +5,7 @@ import useOpenFood from '../hooks/useOpenFood';
 import useOrders from '../hooks/useOrders';
 import Order from '../components/Order/Order';
 import FoodDialog from '../components/ItemDetails/FoodDialog';
+import Footer from '../components/Footer/Footer';
 
 const OrderPage = () => {
     const openFood = useOpenFood();
@@ -21,6 +22,7 @@ const OrderPage = () => {
             <MenuOrdering onClickCheckout={handlerCheckout} />
             <FoodDialog {...openFood} {...orders} />
             <Ordering {...orders} {...openFood} />
+            <Footer />
         </>
     );
 };
